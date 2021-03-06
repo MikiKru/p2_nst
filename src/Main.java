@@ -9,8 +9,10 @@ public class Main {
         System.out.println("HELLO!");
         User u1 = new User("mk@mk.pl", "mk");
         User u2 = new User("ak@ak.pl", "ak");
+        User u3 = new User("pp@pp.pl", "pp");
         System.out.println(u1.toString());
         System.out.println(u2.toString());
+        System.out.println(u3.toString());
         System.out.println("STOP");
     }
 }
