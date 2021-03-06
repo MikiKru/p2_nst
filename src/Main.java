@@ -11,5 +11,6 @@ public class Main {
         User u2 = new User("ak@ak.pl", "ak");
         System.out.println(u1.toString());
         System.out.println(u2.toString());
+        System.out.println("STOP");
     }
 }
