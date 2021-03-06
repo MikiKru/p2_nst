@@ -10,9 +10,11 @@ public class Main {
         User u1 = new User("mk@mk.pl", "mk");
         User u2 = new User("ak@ak.pl", "ak");
         User u3 = new User("pp@pp.pl", "pp");
+        User u4 = new User("qq@qq.pl", "qq");
         System.out.println(u1.toString());
         System.out.println(u2.toString());
         System.out.println(u3.toString());
+        System.out.println(u4.toString());
         System.out.println("STOP");
     }
 }
