@@ -1,0 +1,10 @@
+# plik wyłączający poniższe pliki i katalogi z śledzenia
+# 1. katalog
+.idea/
+out/
+# 2. plik
+# example.ext
+# 3. pliki tego samego typu
+# *.ext
+# 4. wyłączenie śledzenia
+# !abc.ext
