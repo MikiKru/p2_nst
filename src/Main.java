@@ -15,6 +15,6 @@ public class Main {
         System.out.println(u2.toString());
         System.out.println(u3.toString());
         System.out.println(u4.toString());
-        System.out.println("STOP");
+        System.out.println("KONIEC");
     }
 }
