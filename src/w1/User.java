@@ -1,3 +1,5 @@
+package w1;
+
 // ALT + Ins - generate -> konstruktor, getters and setters, toString
 public class User {
     private String email;
@@ -12,7 +14,7 @@ public class User {
     public void setPassword(String password) { this.password = password; }
     @Override
     public String toString() {                          // -> napisowa reprezentacja obiektu
-        return "User{" +
+        return "w1.User{" +
                 "email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 '}';
