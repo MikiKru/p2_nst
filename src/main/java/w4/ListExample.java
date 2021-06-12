@@ -2,9 +2,7 @@ package w4;
 
 import w2.Auto;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ListExample {
     public static void main(String[] args) {
@@ -33,5 +31,30 @@ public class ListExample {
         );
         autos.add(new Auto("Mercedes","GLE", 400_000));
         System.out.println(autos);
+        // osbługa wyjątków
+        Scanner scanner = new Scanner(System.in);
+        while (!autos.isEmpty()) {
+            autos.forEach(System.out::println);
+            try {
+                // kod w którym mogą występować wyjątki
+                System.out.println("Wrpowadź indeks do usuniecia: ");
+                int index = scanner.nextInt();
+                System.out.println("Usuwanie na indeksie " + index);
+                autos.remove(index);
+                // tutaj kod się wykonał w całości bez błędów i nie wykonujemy catch
+            } catch (IndexOutOfBoundsException ex) { // obsługa błędów
+                System.err.println("Błąd indeksowania - brak wartości na indeksie 10");
+                ex.printStackTrace();
+            } catch (InputMismatchException ex) {
+                System.err.println("Błędny typ dla indeksu - musi byc liczba naturalna");
+                scanner.nextLine();
+            } catch (Exception ex){
+                ex.printStackTrace();
+            }
+
+        }
+        System.out.println("Już jest OK");
+        System.out.println(autos);
+        scanner.close();
     }
 }
