@@ -1,5 +1,7 @@
 package w4;
 
+import w2.Auto;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -22,5 +24,14 @@ public class ListExample {
         for (int i = 0; i < list.size(); i++){
             System.out.println(list.get(i));
         }
+        // lista obiektów klasy auto
+        List<Auto> autos = new ArrayList<>(
+                Arrays.asList(
+                        new Auto("VW","Passat",150_000),
+                        new Auto("BMW","5",250_000)
+                        )
+        );
+        autos.add(new Auto("Mercedes","GLE", 400_000));
+        System.out.println(autos);
     }
 }
